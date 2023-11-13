@@ -1,0 +1,98 @@
+h1,h2 {
+    text-transform: uppercase; /*chuyển thành chữ hoa*/
+    letter-spacing: 1px;
+    color: #9D5A4D;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: 400;
+    word-spacing: 5px;
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 170%;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    font-family: Barlow;
+}
+
+section {
+    padding: 20px;
+}
+.logo {
+    float : left;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+header {
+    background-color: #EAC3B7;
+    background-position: center;
+    height: 120vh;
+    font-family: Arial;
+}
+.nd {
+    max-width: 1140px;
+    margin : 0 auto;
+}
+.kol {
+    width: 200px;
+    position: right;
+}
+.main-nav {
+    float: right;
+    list-style-type: none;
+    margin-right: 60px;
+    margin-top: 70px;
+}
+
+.main-nav li {
+    display : inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color : black;
+    font-size : 120%;
+    font-weight: 600;
+}
+
+.main-nav li a:hover, .main-nav li a:active {
+    color: #FEF2F4;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #BA8778;
+}
+
+.clearfix:after{
+    content : " ";
+    display : table;
+    clear : both;
+}
+ /*style khối*/
+ .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #D8A19E;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all .3s;
+  }
+  /*hiệu ứng đổi màu khi di chuột đến*/
+  .btn:hover,
+  .btn:active {
+    background-color: #BA8778;
+  }
+  .container {
+    text-align: center;
+  }
