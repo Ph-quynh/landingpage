@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\font-awesome.css">
+
+    <style>
+        header {
+            font-family: Barlow;
+        }
+        .logo {
+            float: left;
+            width: 100px;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            margin-right: 60px;
+            margin-top: 70px;
+        }
+
+        .main-nav li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .main-nav li a {
+            text-decoration: none;
+            color: black;
+            font-size: 120%;
+            font-weight: 600;
+        }
+
+        .main-nav li a:hover,
+        .main-nav li a:active {
+            padding: 10px 10px;
+            border-radius: 10px;
+            background-color: #BA8778;
+        }
+
+        .clearfix:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+        .list-unstyled{
+            list-style-type: none;
+        }
+
+        .search-button {
+    border-radius: 0px 3px 3px 0px;
+    display: inline-block;
+    float: right;
+    margin: 0px;
+    padding: 12px 19px 12px;
+    text-align: center;
+    background-color: #EAC3B7;
+    border: 1px solid black;
+        }
+        .search-button:after {
+    color: #333;
+    content: "\f002";
+    font-family: fontawesome;
+    font-size: 16px;
+    line-height: 9px;
+    vertical-align: middle;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img class="logo" src="./resource/img/Logo-Spa.png" alt="logo"></a>
+
+        <div class="top-bar animate-dropdown">
+            <div class="container">
+                <div class="header-top-inner">
+                    <div class="cnt-account">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Tài khoản</a></li>
+                            <li><a href="#">Giỏ hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="cnt-block">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle"
+                                    data-hover="dropdown" data-toggle="dropdown"><span class="value">Viet Nam </span><b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Korea</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="main-nav">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <a class="search-button" href="#"></a>
+                </div>
+                </ul>
+</body>
+
+</html>
