@@ -3,18 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chọn Ngôn Ngữ</title>
-</head>
-<body>
+  <title>section</title>
 
-  <label for="language">Chọn Ngôn Ngữ:</label>
-  <select id="language" name="language">
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-    <option value="es">Español</option>
-    <option value="de">Deutsch</option>
-    <!-- Thêm các tùy chọn ngôn ngữ khác nếu cần -->
-  </select>
+  <style>
+    .page-3{
+    background-color: #FEF2F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.cn-1{
+    flex: 1;
+    /* Chia đều không gian cho cả hai hình ảnh */
+    margin: 10px;
+    /* Khoảng cách giữa các hình ảnh */
+    position: relative;
+}
+
+.cn-1 img {
+    width: 70%;
+    height: 70%;
+    /* Đảm bảo tỷ lệ khung hình được bảo tồn */
+    object-fit: cover;
+            /* Chia tỷ lệ khung hình để hình ảnh không bị méo */
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.middle {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 400px; /* Đặt chiều rộng tối đa của phần nội dung */
+}
+  </style>
+</head>
+  
+<body>
+<!-----SECTION CÔNG NGHỆ ĐỘC QUYỀN----->
+    <section class="page-3">
+        <h2>Công nghệ độc quyền</h2>
+        <div class="image-container">
+        <div class="cn-1">
+            <div class="caption">Công nghệ độc quyền <b>LAMIST</b></div>
+            <img src ="resource/img/cay-sinh-hoc.png" alt="">
+        </div>
+        <div class="middle" style="font-size: larger;">
+            <p>Cấy chỉ sinh học Lamist <br>
+                Unstress chống lão hóa, giảm căng thẳng</p><br><br>
+            <p>Cân chỉnh khuôn mặt phương Tây MD CODE <br>
+                Laser trị quầng thâm mắt</p>
+        </div>
+        <div class="cn-1">
+            <div class="caption">Công nghệ <b>chống lão hóa UNSTRESS</b></div>
+            <img src ="resource/img/chong-lao-hoa.jpg" alt="">
+        </div>
+
+        </div>  
+    </section>
 
 </body>
 </html>
