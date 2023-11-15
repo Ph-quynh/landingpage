@@ -1,208 +1,293 @@
 h1,
 h2 {
-  text-transform: uppercase; /*chuyển thành chữ hoa*/
-  letter-spacing: 1px;
-  color: #9d5a4d;
+    text-transform: uppercase; /*chuyển thành chữ hoa*/
+    letter-spacing: 1px;
+    color: #9D5A4D;
 }
 
 h1 {
-  font-size: 300%;
-  font-weight: 400;
-  word-spacing: 5px;
-  line-height: 135%;
-  margin-bottom: 50px;
+    font-size: 300%;
+    font-weight: 400;
+    word-spacing: 5px;
+    line-height: 135%;
+    margin-bottom: 50px;
 }
 
 h2 {
-  font-size: 170%;
-  font-weight: 700;
-  text-align: center;
-  padding: 10px;
+    font-size: 170%;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
 }
 
 p {
-  font-family: Barlow;
+    font-family: Barlow;
 }
 
 .p-main {
-  text-align: left;
-  font-size: 25px;
-  width: 70%;
+    text-align: left;
+    font-size: 25px;
+    width: 70%;
+
 }
 
 section {
-  padding: 20px;
+    padding: 20px;
 }
 
 .logo {
-  height: 109px;
-  width: 132px;
+    float: left;
+    width: 130px;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 header {
-  background-color: #ffffff;
-  font-family: Barlow;
-}
-
+    background-color: #ffffff;
+    font-family: Barlow;
+  }
+  
 main {
-  background-color: #ffabab;
-}
+    background-color: #EAC3B7;
+  }
 
 .nd {
-  max-width: 1140px;
-  margin: 0 auto;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center; 
 }
 
 .kol {
-  width: 200px;
-  position: right;
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 100px;
+    float: right;
 }
 
 .main-nav {
-  float: right;
-  list-style-type: none;
-  margin-right: 60px;
-  margin-top: 70px;
-  background-color: beige;
+    float: right;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-top: 50px;
 }
 
 .main-nav li {
-  display: inline-block;
-  margin-right: 30px;
+    display: inline-block;
+    margin-right: 30px;
 }
 
 .main-nav li a {
-  text-decoration: none;
-  color: black;
-  font-size: 120%;
-  font-weight: 600;
+    text-decoration: none;
+    color:#000;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  color: #fef2f4;
-  padding: 10px 10px;
-  border-radius: 10px;
-  background-color: #ba8778;
-}
-
-.clearfix:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
-/*style khối*/
-.btn {
-  text-decoration: none;
-  color: white;
-  background-color: #d8a19e;
-  padding: 10px 20px;
-  border-radius: 20px;
-  margin-top: 20px;
-  display: inline-block;
-  transition: all 0.3s;
-}
-
-/*hiệu ứng đổi màu khi di chuột đến*/
-.btn:hover,
-.btn:active {
-  background-color: #ba8778;
-}
-
-.container {
-  text-align: center;
-}
-
-.pic {
-  position: relative;
-}
-
-.pic img {
-  justify-content: center; /* Canh giữa theo chiều ngang */
-  width: 150px; /* Chiều rộng của container */
-  border-radius: 50%;
-  box-shadow: -20px -10px 0px 0px #d8a19e; /*x - y - độ mờ - độ phóng rộng - màu*/
-}
-
-.img_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
-  opacity: 0;
-  font-weight: bold;
-  text-align: center; /* Căn giữa hình ảnh và văn bản */
-  margin: 0 10px; /* Tạo khoảng cách giữa mỗi cặp hình ảnh và văn bản */
-}
-
-.pic img:hover img,
-.pic img:active img {
-  filter: blur(2px) brightness(60%);
-}
-.pic img:hover,
-.img_text,
-.pic img:active,
-.img_text {
-  opacity: 1;
-  transform: translate(-60% -50%);
-}
-
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    padding: 10px;
-}
-
-.nav a {
-    color: #000;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: #D8A19E;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #000; /* Màu chữ mặc định */
+    color: white
 }
 
-.nav-link:hover{
-    background-color: #000; /* Màu nền là xám nhạt khi hover */
-    color: #fff; /* Màu chữ là đỏ khi hover */
+.nav-link:hover { 
+    color: #EAC3B7;
 }
 
 .nav-item {
-  position: relative;
+    position: relative;
 }
 
 .nav-item:hover .sub-list {
     display: block;
     width: max-content;
-  }
+}
 
 .sub-list {
-  display: none; /* Mặc định ẩn danh sách con */
-  text-align: center;
-  background-color: #fff;
-  list-style-type: none;
+    display: none; /* Mặc định ẩn danh sách con */
+    text-align: center;
+    background-color: #EAC3B7;
+    list-style-type: none;
 
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
 }
 
 .sub-list li a {
-  color: #000;
-}
-
-.sub-list li a {
-  padding: 5px 10px 5px 10px;
+    color: black;
+    padding: 5px 10px 5px 10px;
 }
 
 .sub-list li:hover {
-  background-color: #000;
+    background-color: #000;
 }
 
 .sub-list a:hover {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #D8A19E;
+    border-radius: 10px;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+
+/*style khối*/
+.btn:link, .btn:visited {
+    background-color: #D8A19E;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .btn:hover, .btn:active {
+    background-color: #BA8778;
+  }
+
+.container {
+    text-align: center;
+    position:static;
+}
+
+hd {
+    background-color: white;
+}
+
+.image-row {
+    display: flex;/* Sử dụng flexbox để sắp xếp các hình ảnh và văn bản */
+    justify-content: space-around; /* Căn các phần tử theo chiều ngang */
+    
+}
+
+.img_text {
+    position: relative;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.img_text img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: -20px -10px 0px 0px #D8A19E;
+    margin: 5px;
+    transition: filter 0.5s ease; /* Hiệu ứng mờ */
+}
+
+.img_text p {
+    opacity: 0;
+    color: white;
+    background-color: #D8A19E;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease; /* Hiệu ứng hiển thị văn bản */
+}
+
+.img_text:hover img {
+    filter: blur(3px); /* Làm mờ hình ảnh khi di chuột vào */
+}
+
+.img_text:hover p {
+    opacity: 1; /* Hiển thị văn bản khi di chuột vào */
+}
+
+.page-3{
+    background-color: #FEF2F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.cn-1{
+    flex: 1;
+    /* Chia đều không gian cho cả hai hình ảnh */
+    margin: 10px;
+    /* Khoảng cách giữa các hình ảnh */
+    position: relative;
+}
+
+.cn-1 img {
+    width: 95%;
+    height: 90%;
+    /* Đảm bảo tỷ lệ khung hình được bảo tồn */
+    object-fit: cover;
+            /* Chia tỷ lệ khung hình để hình ảnh không bị méo */
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.middle {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 400px; /* Đặt chiều rộng tối đa của phần nội dung */
 }
