@@ -74,19 +74,20 @@
             <img class="kol" src="resource/img/beauty blogger.jpg" alt="beauty">-->
         <section id="slider">
             <div class="aspect-ratio-169">
-             <img src="resource/img/1.1.1.jpg">
-              <img src="resource/img/Slider_2.png">
+                <img style="width: 100%; height: auto;" src="resource/img/1.1.1.jpg">
+                <img style="width: 100%; height: auto;" src="resource/img/Slider_2.png">
             </div>
-      
-      <div class="dot-container">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-      </div>
-      
-          </section>
+
+            <div class="dot-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+            </div>
+
+        </section>
         </div>
+        
         <div class="container">
-            <a href="#" class="btn" target="_blank">Đặt lịch ngay</a><br><br>
+            <a href="#" class="btn" target="_blank" style="margin-left: 25px;">Đặt lịch ngay</a><br><br>
         </div>
     </main>
 
@@ -146,27 +147,28 @@
     const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
     const imgContainer = document.querySelector(".aspect-ratio-169")
     const dotItem = document.querySelectorAll(".dot")
-    let imgNumber  = imgPosition.length
+    let imgNumber = imgPosition.length
     let index = 0
     imgPosition.forEach(function (image, index) {
-      image.style.left = index * 100 + "%"
-      dotItem[index].addEventListener("click", function(){
-        slider(index)
-      })
+        image.style.left = index * 100 + "%"
+        dotItem[index].addEventListener("click", function () {
+            slider(index)
+        })
     })
     function imgSlide() {
-      index++;
-      if(index>=imgNumber) {
-        index=0
-      }
-      slider(index)
+        index++;
+        if (index >= imgNumber) {
+            index = 0
+        }
+        slider(index)
     }
-      function slider(index){
+    function slider(index) {
         imgContainer.style.left = "-" + index * 100 + "%"
         const dotActive = document.querySelector(".active")
         dotActive.classList.remove("active")
         dotItem[index].classList.add("active")
     }
     setInterval(imgSlide, 3000)
-  </script>
+</script>
+
 </html>
