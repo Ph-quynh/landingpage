@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Your existing head content -->
+</head>
+
+<body>
+
+  <div class="slideshow-container">
+    <!-- Your existing slideshow content -->
+    <div class="mySlides">
+      <img src="resource/img/1.1.1.jpg" alt="Image 1">
+    </div>
+    <div class="mySlides">
+  <img src="resource/img/Slider_2.png" alt="Image 2">
+    </div>
+  </div>
+
+  <div class="controls-container">
+    <div class="dot-container">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+    </div>
+
+    <div class="container">
+      <a href="#" class="btn" target="_blank">Đặt lịch ngay</a><br><br>
+    </div>
+  </div>
+
+  <script>
+    // Your existing script
+    let slideIndex = 0;
+
+    function showSlides() {
+      let i;
+      const slides = document.querySelectorAll('.mySlides');
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+
+      slideIndex++;
+
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].style.display = 'block';
+      setTimeout(showSlides, 3000); // Đổi hình sau mỗi 2 giây (2000 milliseconds)
+    }
+
+    // Bắt đầu chuyển động tự động khi trang web được tải
+    showSlides();
+  </script>
+
+</body>
+
+</html>
+
+<style>
+  /* Your existing styles */
+
+  .controls-container {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dot-container {
+    margin-bottom: 10px; /* Adjust the spacing between dots and button */
+  }
+
+  .btn {
+    background-color: #D8A19E;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn:hover,
+  .btn:active {
+    background-color: #BA8778;
+  }
+
+  .dot-container {
+    position: absolute;
+    display: flex;
+    height: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: brown;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+#slider {
+    overflow: hidden;
+}
+</style>
